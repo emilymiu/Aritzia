@@ -48,6 +48,7 @@
 
     <div style="padding-left: 16px"></div>
   </body>
+  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -55,14 +56,29 @@
     <title>Image Slider</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <div class="slider">
-      <button class="btn" onclick="prev()"><</button>
-      <div class="image-box">
-        <img src="img/top/crosstank.jpeg" class="slider-img" />
+
+  <div class="slider-container">
+    <body>
+      <div class="slider">
+        <button class="btn" onclick="prevTop()"><</button>
+        <div class="image-box">
+          <img src="img/top/crosstank.jpeg" class="slider-img" />
+        </div>
+        <button class="btn" onclick="nextTop()">></button>
       </div>
-      <button class="btn" onclick="next()">></button>
-    </div>
-    <script src="mixnmatchButton.js"></script>
-  </body>
+      <script src="mixnmatchButton.js"></script>
+    </body>
+
+    <body>
+      <div class="slider">
+        <button class="btn" onclick="prevBottom()"><</button>
+        <div class="image-box">
+          <img src="img/bottom/blackleggings.jpeg" class="slider-img" />
+        </div>
+        <button class="btn" onclick="nextBottom()">></button>
+      </div>
+      <script src="mixnmatchButton.js"></script>
+    </body>
+  </div>
+
 </html>

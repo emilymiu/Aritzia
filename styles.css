@@ -4,7 +4,7 @@ body {
 }
 
 .slider {
-  margin: 50px auto;
+  margin: 50px; 
   display: flex;
   flex-direction: row;
 }
@@ -27,4 +27,10 @@ body {
 
 .btn:hover {
   background-color: #111;
+}
+
+.slider-container {
+  margin: 50px; 
+  display: flex;
+  flex-direction: column;
 }
