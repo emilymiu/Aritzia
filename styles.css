@@ -23,9 +23,10 @@ body {
   font-size: 20px;
   color: #ddd;
   cursor: pointer;
-  margin: 20px;
+  margin-top: 125px;
+  margin-left: 20px;
+  margin-right: 20px;
   height: 45px;
-  margin: 20px;
   height: 45px;
 }
 
@@ -49,7 +50,9 @@ body {
   font-size: 20px;
   color: #ddd;
   cursor: pointer;
-  margin: 20px;
+  margin-top: 125px;
+  margin-left: 20px;
+  margin-right: 50px;
   height: 45px;
 }
 
