@@ -50,10 +50,7 @@
       <a href="mixnmatch.html">Mix 'n Match!</a>
       <a href="wardrobe.html">Your Wardrobe</a>
       <a href="#wishlist">Your Wishlist</a>
-    </div>
-
-
-  
+    </div>  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -63,34 +60,25 @@
   </head>
 
   <body>
-    
+
     <div class="slider-container">
         <div class="slider">
           <button class="btn" onclick="prevTop()"><</button>
           <div class="image-box">
-            <img src="img/top/crosstank.jpeg" class="slider-img-top" />
+            <img src="img/top/blackbodysuit.jpeg" id="slider-img-top" />
           </div>
           <button class="btn" onclick="nextTop()">></button>
         </div>
-        <script src="mixnmatchButton.js"></script>
 
         <div class="slider">
           <button class="btn" onclick="prevBottom()"><</button>
           <div class="image-box">
-            <img src="img/bottom/blackleggings.jpeg" class="slider-img-bottom" />
+            <img src="img/bottom/blackleggings.jpeg" id="slider-img-bottom" />
           </div>
           <button class="btn" onclick="nextBottom()">></button>
         </div>
-        <script src="mixnmatchButton.js"></script>
     </div>
-
-    <script>
-      const selectedImages = JSON.parse(localStorage.getItem('images'));
-  
-      selectedImages.forEach((url) => {
-        document.body.innerHTML += `<img src="${url}" />`;
-      })
-    </script>
+    <script src="mixnmatchButton.js"></script>
 
   </body>
 </html>
