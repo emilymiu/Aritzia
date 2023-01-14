@@ -1,5 +1,5 @@
 var sliderimg = document.querySelector(".slider-img");
-var images = [
+var imagesTop = [
   "blackbodysuit.jpeg",
   "creamblouse.jpeg",
   "creamsweater.jpeg",
@@ -11,20 +11,50 @@ var images = [
   "polotop.jpeg",
   "whitetop.jpeg",
 ];
+var imagesBottom = [
+  "blackleggings.jpeg",
+  "blackmelina.jpeg",
+  "bluejean.jpeg",
+  "blueshorts.jpeg",
+  "brownskirt.jpeg",
+  "grayskirt.jpeg",
+  "graysweats.jpeg",
+  "slimjean.jpeg",
+  "tancargo.jpeg",
+  "tanpants.jpeg",
+  "whitepant.jpeg",
+];
 var i = 0;
+var iBottom = 0;
 
-function prev() {
-  if (i <= 0) i = images.length;
+function prevTop() {
+  if (i <= 0) i = imagesTop.length;
   i--;
-  return setImg();
+  return setTopImg();
 }
 
-function next() {
-  if (i >= images.length - 1) i = -1;
+function nextTop() {
+  if (i >= imagesTop.length - 1) i = -1;
   i++;
-  return setImg();
+  return setTopImg();
 }
 
-function setImg() {
-  return sliderimg.setAttribute("src", "img/top/" + images[i]);
+function setTopImg() {
+  return sliderimg.setAttribute("src", "img/top/" + imagesTop[i]);
+}
+
+function prevBottom() {
+  if (i <= 0) i = imagesBottom.length;
+  i--;
+  return setBottomImg();
+}
+
+function nextBottom() {
+  if (i >= imagesBottom.length - 1) i = -1;
+  i++;
+  return setBottomImg();
+}
+
+function setBottomImg() {
+  return sliderimg.setAttribute("src", "img/bottom/" + imagesBottom[i]);
 }
