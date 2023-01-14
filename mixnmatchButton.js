@@ -16,7 +16,7 @@ var imagesTop = [
 var imagesBottom = [
   "blackleggings.jpeg",
   "blackmelina.jpeg",
-  "blueshorts.jpg",
+  "blackshort.jpeg",
   "brownskirt.jpeg",
   "grayskirt.jpeg",
   "graysweats.jpeg",
@@ -30,37 +30,33 @@ var iTop = 0;
 var iBottom = 0;
 
 function prevTop() {
-  console.log("blicked previous");
   if (iTop <= 0) iTop = imagesTop.length;
   iTop--;
-  return setTopImg();
+  setTopImg();
 }
 
 function nextTop() {
   if (iTop >= imagesTop.length - 1) iTop = -1;
   iTop++;
-  return setTopImg();
+  setTopImg();
 }
 
 function setTopImg() {
-  return sliderimgtop.setAttribute("src", "img/top/" + imagesTop[iTop]);
+  sliderimgtop.setAttribute("src", "img/top/" + imagesTop[iTop]);
 }
 
 function prevBottom() {
   if (iBottom <= 0) iBottom = imagesBottom.length;
   iBottom--;
-  return setBottomImg();
+  setBottomImg();
 }
 
 function nextBottom() {
   if (iBottom >= imagesBottom.length - 1) iBottom = -1;
   iBottom++;
-  return setBottomImg();
+  setBottomImg();
 }
 
 function setBottomImg() {
-  return sliderimgbottom.setAttribute(
-    "src",
-    "img/bottom/" + imagesBottom[iBottom]
-  );
+  sliderimgbottom.setAttribute("src", "img/bottom/" + imagesBottom[iBottom]);
 }

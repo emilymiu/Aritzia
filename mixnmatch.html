@@ -1,89 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .topnav {
-        overflow: hidden;
-        background-color: white;
-      }
-
-      .topnav a {
-        float: left;
-        color: #191818;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-
-      .topnav a:hover {
-        background-color: rgb(16, 16, 16);
-        color: white;
-      }
-
-      .topnav a.active {
-        background-color: #080808;
-        color: rgb(250, 245, 245);
-      }
-    </style>
-  </head>
-
-  <body>
-    
-    <div class="topnav">
-      <a href="#"
-        ><img
-          src="https://mma.prnewswire.com/media/1855365/Aritzia_Inc__Aritzia_Reports_on_Voting_Results_from_the_2022_Ann.jpg"
-          width="225"
-          height="80"
-      /></a>
-      <a href="home.html">Home</a>
-      <a href="mixnmatch.html">Mix 'n Match!</a>
-      <a href="wardrobe.html">Your Wardrobe</a>
-      <a href="wishlist.html">Your Wishlist</a>
-      <a href="shoppingCart.html">Your Shopping cart</a>
-    </div>
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, intial-scale = 1.0" />
-    <title>Image Slider</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-
-    <div class="slider-container">
-        <div class="slider">
-          <button class="otherBtn" onclick="shop()""> Look for new items! </button>
-          <button class="otherBtn" onclick="fetchWardrobe()"> Your items </button>
-          <button class="btn" onclick="prevTop()"><</button>
-          <div class="image-box">
-            <img src="img/top/blackbodysuit.jpeg" id="slider-img-top" />
-          </div>
-          <button class="btn" onclick="nextTop()">></button>
-        </div>
-
-        <div class="slider">
-          <button class="otherBtn" onclick="shop()""> Look for new items! </button>
-          <button class="otherBtn" onclick="fetchWardrobe()"> Your items </button>
-          <button class="btn" onclick="prevBottom()"><</button>
-          <div class="image-box">
-            <img src="img/bottom/blackleggings.jpeg" id="slider-img-bottom" />
-          </div>
-          <button class="btn" onclick="nextBottom()">></button>
-        </div>
-    </div>
-
-  </body>
+ <head>
+   <link rel="stylesheet" type="text/css" href="./styles.css" />
+   <title>Parcel Sandbox</title>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <style>
+     body {
+       margin: 0;
+       font-family: Arial, Helvetica, sans-serif;
+     }
+ 
+     .topnav {
+       overflow: hidden;
+       background-color: white;
+     }
+ 
+     .topnav a {
+       float: left;
+       color: #191818;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 17px;
+     }
+ 
+     .topnav a:hover {
+       background-color: rgb(16, 16, 16);
+       color: white;
+     }
+ 
+     .topnav a.active {
+       background-color: #080808;
+       color: rgb(250, 245, 245);
+     }
+   </style>
+ </head>
+ 
+ <body>
+  
+   <div class="topnav">
+     <a href="#"
+       ><img
+         src="https://mma.prnewswire.com/media/1855365/Aritzia_Inc__Aritzia_Reports_on_Voting_Results_from_the_2022_Ann.jpg"
+         width="225"
+         height="80"
+     /></a>
+     <a href="home.html">Home</a>
+     <a href="mixnmatch.html">Mix 'n Match!</a>
+     <a href="wardrobe.html">Your Wardrobe</a>
+     <a href="wishlist.html">Your Wishlist</a>
+     <a href="shoppingCart.html">Your Shopping cart</a>
+   </div>
+ 
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, intial-scale = 1.0" />
+   <title>Image Slider</title>
+   <link rel="stylesheet" href="styles.css" />
+ </head>
+ 
+ <body>
+ 
+   <div class="slider-container">
+       <div class="slider">
+         <button class="otherBtn" onclick="shop()""> Look for new items! </button>
+         <button class="otherBtn" onclick="fetchWardrobe()"> Your items </button>
+         <button class="btn" onclick="prevTop()"><</button>
+         <div class="image-box">
+           <img src="img/top/blackbodysuit.jpeg" id="slider-img-top" />
+         </div>
+         <button class="btn" onclick="nextTop()">></button>
+       </div>
+ 
+       <div class="slider">
+         <button class="otherBtn" onclick="shop()""> Look for new items! </button>
+         <button class="otherBtn" onclick="fetchWardrobe()"> Your items </button>
+         <button class="btn" onclick="prevBottom()"><</button>
+         <div class="image-box">
+           <img src="img/bottom/blackleggings.jpeg" id="slider-img-bottom" />
+         </div>
+         <button class="btn" onclick="nextBottom()">></button>
+       </div>
+   </div>
+   <script src="mixnmatchButton.js"></script>
+ 
+ </body>
 </html>
