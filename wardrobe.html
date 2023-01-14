@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
@@ -33,7 +36,9 @@
       }
     </style>
   </head>
+
   <body>
+    
     <div class="topnav">
       <a href="#"
         ><img
@@ -41,43 +46,13 @@
           width="225"
           height="80"
       /></a>
-      <a href="#home">Home</a>
-      <a class="active" href="mixnmatch.html">Your Closet</a>
+      <a href="home.html">Home</a>
+      <a href="mixnmatch.html">Mix 'n Match!</a>
+      <a href="wardrobe.html">Your Wardrobe</a>
       <a href="#wishlist">Your Wishlist</a>
     </div>
 
-    <div style="padding-left: 16px"></div>
-  </body>
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, intial-scale = 1.0" />
-    <title>Image Slider</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
   <body>
-    <div class="slider-container">
-        <div class="slider">
-          <button class="btn" onclick="prevTop()"><</button>
-          <div class="image-box">
-            <img src="img/top/crosstank.jpeg" class="slider-img" />
-          </div>
-          <button class="btn" onclick="nextTop()">></button>
-        </div>
-        <script src="mixnmatchButton.js"></script>
-
-        <div class="slider">
-          <button class="btn" onclick="prevBottom()"><</button>
-          <div class="image-box">
-            <img src="img/bottom/blackleggings.jpeg" class="slider-img" />
-          </div>
-          <button class="btn" onclick="nextBottom()">></button>
-        </div>
-        <script src="mixnmatchButton.js"></script>
-    </div>
-
     <script>
       const selectedImages = JSON.parse(localStorage.getItem('images'));
   
