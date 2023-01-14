@@ -49,11 +49,10 @@
       <a href="home.html">Home</a>
       <a href="mixnmatch.html">Mix 'n Match!</a>
       <a href="wardrobe.html">Your Wardrobe</a>
-      <a href="#wishlist">Your Wishlist</a>
+      <a href="wishlist.html">Your Wishlist</a>
+      <a href="shoppingCart.html">Your Shopping cart</a>
     </div>
 
-
-  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -63,29 +62,27 @@
   </head>
 
   <body>
-    
+
     <div class="slider-container">
         <div class="slider">
           <button class="otherBtn" onclick="shop()""> Look for new items! </button>
           <button class="otherBtn" onclick="fetchWardrobe()"> Your items </button>
           <button class="btn" onclick="prevTop()"><</button>
           <div class="image-box">
-            <img src="img/top/crosstank.jpeg" class="slider-img-top" />
+            <img src="img/top/blackbodysuit.jpeg" id="slider-img-top" />
           </div>
           <button class="btn" onclick="nextTop()">></button>
         </div>
-        <script src="mixnmatchButton.js"></script>
 
         <div class="slider">
           <button class="otherBtn" onclick="shop()""> Look for new items! </button>
           <button class="otherBtn" onclick="fetchWardrobe()"> Your items </button>
           <button class="btn" onclick="prevBottom()"><</button>
           <div class="image-box">
-            <img src="img/bottom/blackleggings.jpeg" class="slider-img-bottom" />
+            <img src="img/bottom/blackleggings.jpeg" id="slider-img-bottom" />
           </div>
           <button class="btn" onclick="nextBottom()">></button>
         </div>
-        <script src="mixnmatchButton.js"></script>
     </div>
 
   </body>

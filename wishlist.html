@@ -53,21 +53,12 @@
       <a href="shoppingCart.html">Your Shopping cart</a>
     </div>
 
-  <body>
-    <script>
-      const selectedImages = JSON.parse(localStorage.getItem('images'));
-  
-      selectedImages.forEach((url) => {
-        document.body.innerHTML += `<img src="${url}" width="200" height="300"/>` + " ";
+    <body>
+        <h1>You do not have any items right now. </h1>
         
-      })
-      
-    </script>
-    
-    <h2>Want to find new items?</h2>
-    <form action="https://www.aritzia.com">
-      <button id="shop-button" class="btn">Go Shopping!</button>
-    </form>
-
-  </body>
-</html>
+        <form action="https://www.aritzia.com">
+            <button id="shop-button" class="btn">Go Shopping!</button>
+          </form>
+          
+      </body>
+    </html>
