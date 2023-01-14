@@ -4,7 +4,7 @@ body {
 }
 
 .slider {
-  margin: 50px; 
+  margin: 50px;
   display: flex;
   flex-direction: row;
 }
@@ -22,7 +22,8 @@ body {
   font-size: 20px;
   color: #ddd;
   cursor: pointer;
-  margin: 10px auto;
+  margin: 20px;
+  height: 45px;
 }
 
 .btn:hover {
@@ -30,7 +31,24 @@ body {
 }
 
 .slider-container {
-  margin: 20px; 
+  margin: 10px;
   display: flex;
   flex-direction: column;
+  column-gap: 51px;
+  align-items: center;
+}
+
+.otherBtn {
+  outline: none;
+  background-color: rgb(116, 98, 98);
+  padding: 10px 10px;
+  font-size: 20px;
+  color: #ddd;
+  cursor: pointer;
+  margin: 20px;
+  height: 45px;
+}
+
+.otherBtn:hover {
+  background-color: #111;
 }

@@ -66,6 +66,8 @@
     
     <div class="slider-container">
         <div class="slider">
+          <button class="otherBtn" onclick="shop()""> Look for new items! </button>
+          <button class="otherBtn" onclick="fetchWardrobe()"> Your items </button>
           <button class="btn" onclick="prevTop()"><</button>
           <div class="image-box">
             <img src="img/top/crosstank.jpeg" class="slider-img-top" />
@@ -75,6 +77,8 @@
         <script src="mixnmatchButton.js"></script>
 
         <div class="slider">
+          <button class="otherBtn" onclick="shop()""> Look for new items! </button>
+          <button class="otherBtn" onclick="fetchWardrobe()"> Your items </button>
           <button class="btn" onclick="prevBottom()"><</button>
           <div class="image-box">
             <img src="img/bottom/blackleggings.jpeg" class="slider-img-bottom" />
@@ -83,14 +87,6 @@
         </div>
         <script src="mixnmatchButton.js"></script>
     </div>
-
-    <script>
-      const selectedImages = JSON.parse(localStorage.getItem('images'));
-  
-      selectedImages.forEach((url) => {
-        document.body.innerHTML += `<img src="${url}" />`;
-      })
-    </script>
 
   </body>
 </html>
