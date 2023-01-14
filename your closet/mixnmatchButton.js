@@ -26,5 +26,5 @@ function next() {
 }
 
 function setImg() {
-  return sliderimg.setAttribute("src", "img/" + images[i]);
+  return sliderimg.setAttribute("src", "img/top/" + images[i]);
 }
