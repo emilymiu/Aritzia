@@ -28,6 +28,7 @@ body {
   margin-right: 20px;
   height: 45px;
   height: 45px;
+  font-family: Non-seasonal Geo;
 }
 
 .btn:hover {
@@ -52,6 +53,7 @@ body {
   margin-left: 20px;
   margin-right: 50px;
   height: 45px;
+  font-family: Non-seasonal Geo;
 }
 
 .otherBtn:hover {
