@@ -1,10 +1,6 @@
-a:hover {
+/* a:hover {
   background-color: white;
   color: black;
-}
-
-body {
-  font-family: sans-serif;
 }
 
 p {
@@ -42,4 +38,33 @@ p {
   font-weight: 200;
   font-size: 32px;
   margin: 20px;
+} */
+
+body {
+  align-items: center;
+  text-align: center;
+}
+
+.slider {
+  margin: 50px auto;
+}
+
+.image-box img {
+  width: 200px;
+  height: 200px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: #888;
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #ddd;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.btn:hover{
+  background-color: #111;
 }
