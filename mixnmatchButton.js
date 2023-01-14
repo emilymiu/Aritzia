@@ -1,5 +1,5 @@
 var sliderimg = document.querySelector('.slider-img');
-var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg'];
+var images = ['blackbodysuit.jpeg', 'creamblouse.jpeg', 'creamsweater.jpeg', 'crosstank.jpeg', 'graysweatshirt.jpeg', 'graytop.jpeg', 'greenbutton.jpeg', 'pinktop.jpeg', 'polotop.jpeg', 'whitetop.jpeg'];
 var i = 0;
 
 function prev() {
