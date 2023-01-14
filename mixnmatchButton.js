@@ -16,7 +16,7 @@ var imagesTop = [
 var imagesBottom = [
   "blackleggings.jpeg",
   "blackmelina.jpeg",
-  "blueshorts.jpg",
+  "blackshort.jpeg",
   "brownskirt.jpeg",
   "grayskirt.jpeg",
   "graysweats.jpeg",
