@@ -60,3 +60,4 @@ function nextBottom() {
 function setBottomImg() {
   sliderimgbottom.setAttribute("src", "img/bottom/" + imagesBottom[iBottom]);
 }
+
