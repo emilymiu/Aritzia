@@ -36,6 +36,9 @@
       <img src="img/bottom/grayskirt.jpeg" alt="Gray Skirt" width="200" height="300">
       <img src="img/bottom/brownskirt.jpeg" alt="Brown Skirt" width="200" height="300">
     </div>
+    <form action="mixnmatch.html">
+      <button id="next-button" class="next-button">Next</button>
+    </form>
   </body>
 
   <script>
@@ -56,7 +59,7 @@
     
      // traverses the <img> elements, and register onclick to each one
      // else, apply the properties defined in $imgProp
-     for(i = 0; i < imglength; i++) {
+     for (i = 0; i < imglength; i++) {
      allimgs[i].onclick=function() {
      // if borderStyle is already applied, anulates the 'padding', 'background' and 'border' properties
      if(this.style.borderStyle == imgProp.borderStyle) {
