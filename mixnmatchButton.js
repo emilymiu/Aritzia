@@ -60,3 +60,17 @@ function nextBottom() {
 function setBottomImg() {
   sliderimgbottom.setAttribute("src", "img/bottom/" + imagesBottom[iBottom]);
 }
+
+const selectedImages = [];
+
+function wishlistTop() {
+  selectedImages.push("img/top/" + imagesTop[iTop]);
+  console.log(selectedImages);
+  localStorage.setItem('wishlistImages', JSON.stringify(selectedImages));
+}
+
+function wishlistBottom() {
+  selectedImages.push("img/bottom/" + imagesBottom[iBottom]);
+  console.log(selectedImages);
+  localStorage.setItem('wishlistImages', JSON.stringify(selectedImages));
+}
