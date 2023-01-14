@@ -11,8 +11,8 @@ body {
 }
 
 .image-box img {
-  width: 275px;
-  height: 325px;
+  width: 250px;
+  height: 275px;
 }
 
 .btn {
@@ -35,8 +35,6 @@ body {
 }
 
 .slider-container {
-  margin: 10px;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   column-gap: 51px;
