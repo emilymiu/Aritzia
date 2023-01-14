@@ -4,13 +4,53 @@
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: white;
+      }
+
+      .topnav a {
+        float: left;
+        color: #191818;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: rgb(249, 246, 246);
+        color: white;
+      }
+
+      .topnav a.active {
+        background-color: #080808;
+        color: rgb(250, 245, 245);
+      }
+    </style>
   </head>
 
   <body>
-    <div id="navbar">
-      <nav>
-        <a href="home.html" class="nav-item">Home</a>
-      </nav>
+    <div class="topnav">
+      <a href="#"
+        ><img
+          src="https://mma.prnewswire.com/media/1855365/Aritzia_Inc__Aritzia_Reports_on_Voting_Results_from_the_2022_Ann.jpg"
+          width="225"
+          height="80"
+      /></a>
+      <a class="active" href="#home">Home</a>
+      <a href="mixnmatch.html">Your Closet</a>
+      <a href="#wishlist">Your Wishlist</a>
+    </div>
+
+    <div style="padding-left: 16px">
     </div>
     <div id="app">
       <h1>Welcome to Aritzia Stylist!</h1>
@@ -31,7 +71,7 @@
       <img src="img/bottom/tanpants.jpeg" alt="Tan Pants" width="200" height="300">
       <img src="img/bottom/blackleggings.jpeg" alt="Black Leggings" width="200" height="300">
       <img src="img/bottom/tancargo.jpeg" alt="Tan Cargo" width="200" height="300">
-      <img src="img/bottom/bluejean.jpeg" alt="Blue Jean" width="200" height="300">
+      <img src="img/bottom/blueshorts.jpg" alt="Blue Shorts" width="200" height="300">
       <img src="img/bottom/slimjean.jpeg" alt="Slim Jean" width="200" height="300">
       <img src="img/bottom/grayskirt.jpeg" alt="Gray Skirt" width="200" height="300">
       <img src="img/bottom/brownskirt.jpeg" alt="Brown Skirt" width="200" height="300">
@@ -51,6 +91,13 @@
      'borderColor': '#000000'
     };
     
+    function selectImage(){
+      let selectedImg;
+      document.getElementById("img/bottom/brownskirt.jpeg").src = selectedImg
+      console.log(selectedImg)
+    }
+
+
     // function to highlight IMGs on click - from: https://coursesweb.net/
     function highlightImg() {
      // gets all <img> tags, and their number
@@ -80,6 +127,7 @@
     
     // calls the highlightImg() function to apply the effect
     highlightImg();
+    selectImage();
     </script>
 
 </html>
