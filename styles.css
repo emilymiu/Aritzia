@@ -5,6 +5,8 @@ body {
 
 .slider {
   margin: 50px auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .image-box img {
