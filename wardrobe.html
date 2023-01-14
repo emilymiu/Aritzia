@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: white;
+      }
+
+      .topnav a {
+        float: left;
+        color: #191818;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: rgb(249, 246, 246);
+        color: white;
+      }
+
+      .topnav a.active {
+        background-color: #080808;
+        color: rgb(250, 245, 245);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="#"
+        ><img
+          src="https://mma.prnewswire.com/media/1855365/Aritzia_Inc__Aritzia_Reports_on_Voting_Results_from_the_2022_Ann.jpg"
+          width="225"
+          height="80"
+      /></a>
+      <a href="#home">Home</a>
+      <a class="active" href="mixnmatch.html">Your Closet</a>
+      <a href="#wishlist">Your Wishlist</a>
+    </div>
+
+    <div style="padding-left: 16px"></div>
+  </body>
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, intial-scale = 1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="slider-container">
+        <div class="slider">
+          <button class="btn" onclick="prevTop()"><</button>
+          <div class="image-box">
+            <img src="img/top/crosstank.jpeg" class="slider-img" />
+          </div>
+          <button class="btn" onclick="nextTop()">></button>
+        </div>
+        <script src="mixnmatchButton.js"></script>
+
+        <div class="slider">
+          <button class="btn" onclick="prevBottom()"><</button>
+          <div class="image-box">
+            <img src="img/bottom/blackleggings.jpeg" class="slider-img" />
+          </div>
+          <button class="btn" onclick="nextBottom()">></button>
+        </div>
+        <script src="mixnmatchButton.js"></script>
+    </div>
+
+    <script>
+      const selectedImages = JSON.parse(localStorage.getItem('images'));
+  
+      selectedImages.forEach((url) => {
+        document.body.innerHTML += `<img src="${url}" />`;
+      })
+    </script>
+    
+  </body>
+</html>
