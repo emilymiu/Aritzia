@@ -30,7 +30,7 @@ body {
 }
 
 .slider-container {
-  margin: 50px; 
+  margin: 20px; 
   display: flex;
   flex-direction: column;
 }
