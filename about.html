@@ -56,10 +56,10 @@
     </div>
     <div id="app">
       <h1>Welcome to Aritzia Stylist!</h1>
-      <p><b>Please select the items you have:</b></p>
+      <p><b>Please select the items that you already own:</b></p>
       <input id="image-field" type="text" value="" hidden name="image_value" />
-      <img src="img/top/whitetop.jpeg" alt="White Top" width="200" height="300"/>
-      <img src="img/top/blackbodysuit.jpeg" alt="Black Bodysuit" width="200" height="300"/>
+      <img src="img/top/whitetop.jpeg" alt="White Top" width="200" height="300" id="top"/>
+      <img src="img/top/blackbodysuit.jpeg" alt="Black Bodysuit" width="200" height="300" id="top"/>
       <img src="img/top/creamblouse.jpeg" alt="Cream Blouse" width="200" height="300" />
       <img src="img/top/graysweatshirt.jpeg" alt="Gray Sweatshirt" width="200" height="300" />
       <img src="img/top/crosstank.jpeg" alt="Cross Tank" width="200" height="300" />
@@ -68,8 +68,8 @@
       <img src="img/top/greenbutton.jpeg" alt="Green Button" width="200" height="300" />
       <img src="img/top/pinktop.jpeg" alt="Pink Top" width="200" height="300" />
       <img src="img/top/graytop.jpeg" alt="Gray Top" width="200" height="300" />
-      <img src="img/bottom/blackmelina.jpeg" alt="Black Melina" width="200" height="300" />
-      <img src="img/bottom/whitepant.jpeg" alt="White Pant" width="200" height="300" />
+      <img src="img/bottom/blackmelina.jpeg" alt="Black Melina" width="200" height="300" id="top"/>
+      <img src="img/bottom/whitepant.jpeg" alt="White Pant" width="200" height="300" id="top"/>
       <img src="img/bottom/graysweats.jpeg" alt="Gray Sweats" width="200" height="300"/>
       <img src="img/bottom/tanpants.jpeg" alt="Tan Pants" width="200" height="300" />
       <img src="img/bottom/blackleggings.jpeg" alt="Black Leggings" width="200" height="300"/>
@@ -96,6 +96,8 @@
     };
     
     const selectedImages = [];
+    const selectedTops = [];
+    const selectedBottoms = [];
 
     function selectImage(img){
       selectedImages.push(img.getAttribute('src'));

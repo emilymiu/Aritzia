@@ -11,8 +11,8 @@ body {
 }
 
 .image-box img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 275px;
 }
 
 .btn {
@@ -23,9 +23,10 @@ body {
   font-size: 20px;
   color: #ddd;
   cursor: pointer;
-  margin: 20px;
+  margin-top: 125px;
+  margin-left: 20px;
+  margin-right: 20px;
   height: 45px;
-  margin: 20px;
   height: 45px;
 }
 
@@ -34,8 +35,6 @@ body {
 }
 
 .slider-container {
-  margin: 10px;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   column-gap: 51px;
@@ -49,7 +48,9 @@ body {
   font-size: 20px;
   color: #ddd;
   cursor: pointer;
-  margin: 20px;
+  margin-top: 125px;
+  margin-left: 20px;
+  margin-right: 50px;
   height: 45px;
 }
 

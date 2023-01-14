@@ -61,6 +61,7 @@ function setBottomImg() {
   sliderimgbottom.setAttribute("src", "img/bottom/" + imagesBottom[iBottom]);
 }
 
+
 const selectedImages = [];
 
 function wishlistTop() {
