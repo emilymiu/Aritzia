@@ -1,6 +1,6 @@
-document.getElementById("hello-button").addEventListener("click", printHello);
+document.getElementById("yes-button").addEventListener("click", chooseOutfit);
 
-function printHello() {
+function chooseOutfit() {
   console.log("Hello");
   document.getElementById("hello").innerHTML = "Hello!";
 }
