@@ -135,14 +135,30 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h2>Aritzia Stylist Login Form</h2>
-<p>Resize the browser window to see the responsive effect. When the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other.</p>
+<h2>Aritzia Stylist</h2>
 
 <div class="container">
-  <form action="/index.html">
+  <form action="/action_page.php">
     <div class="row">
-      <h2 style="text-align:center">Login with Username and Password</h2>
+      <h2 style="text-align:center">Login or Sign Up</h2>
       <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Sign Up">
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
 
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
@@ -153,6 +169,13 @@ input[type=submit]:hover {
   </form>
 </div>
 
+<div class="bottom-container">
+  <div class="row">
+    </div>
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
