@@ -53,11 +53,21 @@
     </div>
 
     <body>
-        <h1>You do not have any items right now. </h1>
-        
-        <form action="https://www.aritzia.com">
-            <button id="shop-button" class="btn">Go Shopping!</button>
-          </form>
+        <script>
+          const selectedImages = JSON.parse(localStorage.getItem('wishlistImages'));
+      
+          selectedImages.forEach((url) => {
+            document.body.innerHTML += `<img src="${url}" width="200" height="300"/>` + " ";
+            
+          })
           
+        </script>
+        
+        <h2>Want to purchase these items?</h2>
+        <form action="https://www.aritzia.com">
+          <button id="shop-button" class="btn">Go Shopping!</button>
+        </form>
+    
       </body>
+
     </html>
