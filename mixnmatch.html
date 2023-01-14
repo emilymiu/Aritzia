@@ -57,28 +57,34 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <div class="slider-container">
-    <body>
-      <div class="slider">
-        <button class="btn" onclick="prevTop()"><</button>
-        <div class="image-box">
-          <img src="img/top/crosstank.jpeg" class="slider-img" />
+  <body>
+    <div class="slider-container">
+        <div class="slider">
+          <button class="btn" onclick="prevTop()"><</button>
+          <div class="image-box">
+            <img src="img/top/crosstank.jpeg" class="slider-img" />
+          </div>
+          <button class="btn" onclick="nextTop()">></button>
         </div>
-        <button class="btn" onclick="nextTop()">></button>
-      </div>
-      <script src="mixnmatchButton.js"></script>
-    </body>
+        <script src="mixnmatchButton.js"></script>
 
-    <body>
-      <div class="slider">
-        <button class="btn" onclick="prevBottom()"><</button>
-        <div class="image-box">
-          <img src="img/bottom/blackleggings.jpeg" class="slider-img" />
+        <div class="slider">
+          <button class="btn" onclick="prevBottom()"><</button>
+          <div class="image-box">
+            <img src="img/bottom/blackleggings.jpeg" class="slider-img" />
+          </div>
+          <button class="btn" onclick="nextBottom()">></button>
         </div>
-        <button class="btn" onclick="nextBottom()">></button>
-      </div>
-      <script src="mixnmatchButton.js"></script>
-    </body>
-  </div>
+        <script src="mixnmatchButton.js"></script>
+    </div>
 
+    <script>
+      const selectedImages = JSON.parse(localStorage.getItem('images'));
+  
+      selectedImages.forEach((url) => {
+        document.body.innerHTML += `<img src="${url}" />`;
+      })
+    </script>
+    
+  </body>
 </html>

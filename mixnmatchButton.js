@@ -24,18 +24,18 @@ var imagesBottom = [
   "tanpants.jpeg",
   "whitepant.jpeg",
 ];
-var i = 0;
+var iTop = 0;
 var iBottom = 0;
 
 function prevTop() {
-  if (i <= 0) i = imagesTop.length;
-  i--;
+  if (iTop <= 0) iTop = imagesTop.length;
+  iTop--;
   return setTopImg();
 }
 
 function nextTop() {
-  if (i >= imagesTop.length - 1) i = -1;
-  i++;
+  if (iTop >= imagesTop.length - 1) iTop = -1;
+  iTop++;
   return setTopImg();
 }
 
@@ -44,14 +44,14 @@ function setTopImg() {
 }
 
 function prevBottom() {
-  if (i <= 0) i = imagesBottom.length;
-  i--;
+  if (iBottom <= 0) iBottom = imagesBottom.length;
+  iBottom--;
   return setBottomImg();
 }
 
 function nextBottom() {
-  if (i >= imagesBottom.length - 1) i = -1;
-  i++;
+  if (iBottom >= imagesBottom.length - 1) iBottom = -1;
+  iBottom++;
   return setBottomImg();
 }
 
