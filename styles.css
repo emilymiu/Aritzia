@@ -5,6 +5,7 @@ body {
 
 .slider {
   margin: 50px;
+  margin: 50px;
   display: flex;
   flex-direction: row;
 }
@@ -24,6 +25,8 @@ body {
   cursor: pointer;
   margin: 20px;
   height: 45px;
+  margin: 20px;
+  height: 45px;
 }
 
 .btn:hover {
@@ -31,6 +34,7 @@ body {
 }
 
 .slider-container {
+  margin: 10px;
   margin: 10px;
   display: flex;
   flex-direction: column;
