@@ -1,0 +1,45 @@
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+p {
+  color: grey;
+}
+
+.app-button {
+  background-color: darkcyan;
+  border: 3px solid black;
+  border-radius: 5px;
+  color: white;
+  width: 80px;
+  height: 40px;
+}
+
+.app-button:hover {
+  background-color: darkmagenta;
+  border: 3px solid black;
+  border-radius: 5px;
+  color: white;
+  width: 80px;
+  height: 40px;
+}
+
+#navbar {
+  background-color: lightseagreen;
+  width: auto;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+  font-size: 32px;
+  margin: 20px;
+}
